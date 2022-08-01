@@ -103,7 +103,7 @@ Main_Doublet_Decon<-function(rawDataFile, groupsFile, filename, location, fullDa
     rawData=rawDataFile
   }
 
-  if(class(groupsFile)=="character"){
+  if(class(groupsFile)[1]=="character"){
     if(ICGS2_flag==T){
       groups=ICGS2$groups
     }else{
